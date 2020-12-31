@@ -1,0 +1,132 @@
+None
+Date limite: 2021-03-01 12:00:00
+idWeb: 20-152081
+------------
+METEO-FRANCE2036F0282
+Date limite: 2021-01-28 12:00:00
+idWeb: 20-153614
+------------
+None
+Date limite: 2021-01-20 12:00:00
+idWeb: 20-147893
+------------
+AOO 2020-069- Fourniture de carbutant
+Date limite: 2021-01-11 22:00:00
+idWeb: 20-149466
+------------
+FOURNITURE DE CARBURANT
+Date limite: 2021-01-12 12:00:00
+idWeb: 20-149866
+------------
+None
+Date limite: 2021-01-15 11:00:00
+idWeb: 20-151511
+------------
+None
+Date limite: 2021-01-08 12:00:00
+idWeb: 20-153510
+------------
+202125 Ac Bdc Fourniture de carburants et services associés au moyen de cartes accréditives (Groupement de commandes Valence Romans Agglo et Ville de Valence)
+Date limite: 2021-01-25 12:00:00
+idWeb: 20-153099
+------------
+Carburant - lot 1 : carburant vrac / lot 2 : carte accréditive
+Date limite: 2021-01-14 23:59:00
+idWeb: 20-152520
+------------
+Fourniture de carburant en station par cartes accréditives et de prestations connexes pour les services de la commune de Fos sur Mer.
+Date limite: 2021-01-25 17:00:00
+idWeb: 20-153542
+------------
+20four15 Accord Cadre A Bons De Commande De Fourniture De Carburants Et Services Annexes Par Cartes Accreditives Pour L'Ensemble Du Territoire De La Metropole Tpm
+Date limite: 2021-02-08 16:00:00
+idWeb: 20-156071
+------------
+Groupement de commandes pour la fourniture de cartes carburant et prestations annexes
+Date limite: 2021-01-04 12:00:00
+idWeb: 20-147836
+------------
+Fourniture de carburant par cartes accréditives et services annexes-.
+Date limite: 2021-02-01 16:00:00
+idWeb: 20-157845
+------------
+None
+Date limite: 2021-01-11 17:00:00
+idWeb: 20-158036
+------------
+Fourniture de carburants et de prestations associées sur le territoire national pour la Communauté d'agglomération du Val de Fensch par système de cartes accréditives
+Date limite: 2021-01-25 12:00:00
+idWeb: 20-157921
+------------
+Fourniture de carburants et prestations annexes
+Date limite: 2021-02-01 12:00:00
+idWeb: 20-158388
+------------
+Infrastructures Et Systemes Numeriques -Mise en concurrence des services de télécommunications
+Date limite: 2021-01-13 16:30:00
+idWeb: 20-146855
+------------
+Conception, maintenance et animation de formations dans le domaine des métiers de l'informatique.
+Date limite: 2021-02-08 12:00:00
+idWeb: 20-149638
+------------
+Externalisation des archives intermédiaires dans un système d'archivage électronique à valeur légale
+Date limite: 2021-01-11 17:00:00
+idWeb: 20-148706
+------------
+Services d'infrastructures numériques
+Date limite: 2021-01-15 12:00:00
+idWeb: 20-153251
+------------
+None
+Date limite: 2021-01-25 12:00:00
+idWeb: 20-155016
+------------
+None
+Date limite: 2021-01-18 16:00:00
+idWeb: 20-153108
+------------
+Gestion des déchets des sites d'Eau de Paris
+Date limite: 2021-01-11 12:00:00
+idWeb: 20-144129
+------------
+19134-Vérifications réglementaires et contrôles périodiques concernant les équipements de travail, HSCT et protection de l'environnement du Service industriel de l'aéronautique
+Date limite: 2021-01-18 14:00:00
+idWeb: 20-146438
+------------
+Acquisition d'un système de microscopie FT-IR pour le laboratoire de l'Anses - site de Boulogne sur mer / Relance2 suite à déclaration sans suite
+Date limite: 2021-01-08 17:00:00
+idWeb: 20-142967
+------------
+Maintenance préventive et corrective d'appareils de mesure
+Date limite: 2021-01-28 12:00:00
+idWeb: 20-152436
+------------
+None
+Date limite: 2021-02-02 12:00:00
+idWeb: 20-149994
+------------
+Prestations de conseils juridiques et de représentation légale en lien avec la mise en place et le suivi de financements aéronautiques d'appareils Airbus
+Date limite: 2021-01-26 23:55:00
+idWeb: 20-157374
+------------
+Réalisation de travaux de sécurisation des ouvrages, de la production et de la distribution de l'eau potable
+Date limite: 2021-01-22 11:00:00
+idWeb: 20-153663
+------------
+Prestations de conseils juridiques et de représentation légale en lien avec la mise en place et le suivi de financements aéronautiques d'appareils Airbus
+Date limite: 2021-01-26 23:55:00
+idWeb: 20-157570
+------------
+None
+Date limite: 2021-01-20 12:00:00
+idWeb: 20-154668
+------------
+Fourniture de dispositifs médicaux pour abords urinaires pour le Groupement de commandes de produits de santé du Finistère
+Date limite: 2021-01-22 11:00:00
+idWeb: 20-153650
+------------
+FOURNITURE DE COMPTEURS D'EAU POUR L'EXPLOITATION DES RESEAUX DE DISTRIBUTION D'EAU POTABLE DES COMMUNES DE LIMOGES METROPOLE EN GESTION DIRECTE
+Date limite: 2021-01-25 12:30:00
+idWeb: 20-154405
+------------
