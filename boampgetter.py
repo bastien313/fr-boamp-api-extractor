@@ -22,11 +22,17 @@ class boampGetter:
         """Make a search request to Boamp.
             Store result in searchResponse.
         """
-        print('Boamp search: {} after {}'.format(strSearch,dateparution))
+        print('Boamp search: \'{}\' after \'{}\''.format(strSearch,dateparution))
         lineOut = 'http://api.dila.fr/opendata/api-boamp/annonces/search?criterion=dateparution>{} ET {}'.format(dateparution,strSearch)
         self.__searchResponse = requests.get(lineOut).json()
         print('{} Response found'.format(self.__searchSize()))
 
+    def saveJsonFile(self, idweb):
+        """Get ad represented by idweb(str) and save it in json file
+        """
+        strFile = '{}.json'.format(idweb)
+        with open(strFile, 'w') as outfile:
+            json.dump(requests.get('http://api.dila.fr/opendata/api-boamp/annonces/v230/' + idweb).json(), outfile)
 
     def extractValidAd(self):
         """Return array of json ad wich describe the ad if date recept offer if higher tha today.
@@ -36,8 +42,8 @@ class boampGetter:
         i = 0
         while i < nbItem :
             date =0
-            offre = self.__searchResponse["item"][i]
-            annonce = requests.get('http://api.dila.fr/opendata/api-boamp/annonces/v230/' + offre["value"]).json()
+            offre = self.__searchResponse['item'][i]
+            annonce = requests.get('http://api.dila.fr/opendata/api-boamp/annonces/v230/' + offre['value']).json()
             try:
                 date = annonce['donnees']['conditiondelai']['receptoffres']
             except:
