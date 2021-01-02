@@ -1,4 +1,5 @@
 from datetime import datetime
+import json
 
 numerLineInAd = 4 # number of line for describe ad
 
@@ -29,18 +30,53 @@ class dataBase:
             print('idWeb: ' + idweb + '\n')
             self.__dicAd[idweb] = strList
 
-                         
-        
-    def saveAd(self, fileName):
-        """Save all ad stored in __dicAd in file named by fileName
+                    
+    def saveAd(self):
+        """Save all ad in file ad.json
         """
-        with open(fileName, 'w', encoding='utf-8') as fichier:
-            for idweb, strList in self.__dicAd.items():
-                fichier.write('{} \n'.format(strList[0]))
-                fichier.write('{} \n'.format(strList[1]))
-                fichier.write('Date limite: {}\n'.format(strList[2]))
-                fichier.write('idWeb: {}\n'.format(idweb))
-                fichier.write('-------------------------------------------------\n')
+        with open('ad.json', 'w') as outfile:
+            json.dump(self.__dicAd, outfile)
+
+    def loadAdd(self):
+        """Load ad from ad.json file.
+            overwrite all data stored in __dicAd
+        """
+        try:
+            with open('ad.json', 'r') as json_file: 
+                self.__dicAd = json.load(json_file)
+        except:
+            pass
+
+    
+    def adIsReject(self, ad, rejectedWord = []):
+        """Check if ad must be reject or valid.
+            Return 1 if ad must be reject.
+        """
+        for word in rejectedWord:
+            if word in ad[0] or word in ad[1]:
+                return 1
+        return 0
+        
+    def makeOutputFile(self, fileName, fileNameReject, rejectedWord = []):
+        """Write all not rejected ad in filename and all rejected ad in fileNameReject.
+            rejectedWord is the list of word for reject offer
+        """
+
+        fileValid = open(fileName, 'w', encoding='utf-8')
+        fileReject = open(fileNameReject, 'w', encoding='utf-8')
+        fileOut = 0
+        for idweb, strList in self.__dicAd.items():
+            if self.adIsReject(strList, rejectedWord):
+                fileOut = fileReject
+            else:
+                fileOut = fileValid
+                
+            fileOut.write('{} \n'.format(strList[0]))
+            fileOut.write('{} \n'.format(strList[1]))
+            fileOut.write('Date limite: {}\n'.format(strList[2]))
+            fileOut.write('idWeb: {}\n'.format(idweb))
+            fileOut.write('-------------------------------------------------\n')
+            
 
     def removeOldAd(self):
         """Remove all ad wich have recipient date older than today.
@@ -58,36 +94,23 @@ class dataBase:
             print('Date limite: {}'.format(self.__dicAd[key][2]))
             print('idWeb: {}\n'.format(key))
             del self.__dicAd[key]
-                
-        
-    def loadAdd(self,fileName):
-        """Load ad from file.
-            overwrite all data stored in __dicAd
-        """
-        self.__dicAd = {}
-        try:
-            with open('data.txt', 'r', encoding='utf-8') as fichier:
-                read = fichier.read()
-                read = read.replace('\r','')
-                readTab = read.split('\n')
-                for idAd in range(0,int(len(readTab)/int(5))):
-                    self.__dicAd[readTab[(idAd*5)+3].replace('idWeb: ','')] = [readTab[(idAd*5)+0],
-                    readTab[(idAd*5)+1],
-                    readTab[(idAd*5)+2].replace('Date limite: ','')]
-        except:
-            pass
 
-
-def getSearchWord():
-    """Return list of search word
+def getWordList(fileNme):
+    """Return list of line writen in file and skip '\n' '\r'
     """
     read = ''
-    with open('search.txt', 'r') as fichier:
+    with open(fileNme, 'r') as fichier:
         read = fichier.read()
     read = read.replace('\n',';')
     read = read.replace('\r',';')
     read = read.replace(';;',';')
-    return read.split(';')
+    
+    lineOut = []
+    for line in read.split(';'):
+        if line != '':
+            lineOut.append(line)
+    return lineOut
+            
 				
 			
 		
